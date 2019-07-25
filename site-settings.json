@@ -1,0 +1,16 @@
+{
+  "title" : "Interflora speedtracker",
+  "colors": {
+    "--primary": "#866EF7",
+    "--accent": "blue",
+    "--bg-primary": "#F3F2F7",
+    "--bg-secondary": "#fff",
+    "--link": "red",
+    "chartColors": {
+      "--graph1": "red",
+      "--graph2": "yellow",
+      "--graph3": "green",
+      "--graph4": "blue"
+    }
+  }
+}

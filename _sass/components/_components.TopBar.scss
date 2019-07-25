@@ -1,0 +1,19 @@
+.c-TopBar {
+  color: $primary;
+  background: $background;
+  text-align: left;
+  margin: auto;
+ 
+  &__inner {
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px; 
+  }
+}
+
+
+.react-datepicker__input-container {
+  input {
+    
+  }
+}

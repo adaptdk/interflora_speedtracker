@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% assign currentProfile = '' %}
+
+{% for profile in site.profiles %}
+  {% if page.slug %}
+    {% if page.slug == profile.slug %}
+      {% assign currentProfile = profile.name %}
+    {% endif %}
+  {% else %}
+  {% if profile.default %}
+    {% assign currentProfile = profile.name %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+
+
+{% if currentProfile != '' %}
+  {% assign pageTitle = pageTitle | append: ' - ' | append: currentProfile %}
+{% endif %}
+
+<title></title>
+
+<meta property="og:title" content="{{ pageTitle }}"/>
+<meta property="og:site_name" content="{{ pageTitle }}"/>
+<meta property="og:description" content="Website performance monitoring tool"/>

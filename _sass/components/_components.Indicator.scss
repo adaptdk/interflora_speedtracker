@@ -1,0 +1,24 @@
+.c-Indicator {
+  display: inline-block;
+}
+
+.c-Indicator__key {
+  font-size: 0.9em;
+  margin-bottom: -7px;
+  color: grey;
+}
+
+.c-Indicator__value {
+  padding-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+
+  .c-Indicator--success & {
+    color: #7CAE7A;
+  }
+
+  .c-Indicator--danger & {
+    color: red;
+  }
+}
